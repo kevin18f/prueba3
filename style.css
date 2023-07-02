@@ -1,0 +1,84 @@
+/*Color para el nav*/
+.bg-nav {
+    
+      background: linear-gradient(to right,  #c2bec4, #4a90e2);
+      position: relative;
+      width: 100%;
+      height: auto;
+      
+}
+
+/*propiedad para que el div padre contenga a los dos contenedores en la misma linea*/
+.combined-div {
+    display: flex;
+    border: 10px solid #00ccff; /*borde del div padre*/
+    position: relative;
+    top: 0;
+  }
+
+/*colocar posicion a la barra izquierda*/
+  .navbar-fixed {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #f8f9fa;
+    padding-top: 20px;
+    width: 20%;/*tamaño horiaontal a la barra izquierda*/
+    border: 10px solid #0026ff;/*borde del contenedor de la barra izquierda*/
+    padding: 0;
+    background-color: hsl(0, 6%, 76%);  /*Color de fondo del la barra izquierda*/
+  }
+/*tamaño horiaontal a los desplegables*/
+  .navbar-fixed .navbar-nav {
+    width: 90%;
+    
+  }
+  /*propiedades para el contenedor*/
+  .content {
+    top: 100px;
+    background: #000;  /*color de fondo del contenedor*/
+    flex-grow: 1; /*ocupe todo el espacio restante de la derecha*/
+    margin: 0;
+    padding: 0;
+    border: 10px solid #0059ff;/*color del borde*/
+    overflow-y: auto;
+  } 
+/*margen izquierdo a los desplegables*/
+.flex-column{
+    margin-left: 15px; 
+    /*background: #000;   se puede modificar el color de fondo delos desplegables*/
+}
+
+  .my-button {
+    height: 80px; /* Ajusta el valor según tus necesidades */
+    border: none; /* Oculta el borde */
+    outline: none; /* Elimina el contorno */
+  }
+  .horizontal-line {
+    width: 100%; /* Ancho de la línea */
+    height: 10px; /* Altura de la línea */
+    background-color: #0026ff; /* Color de la línea */
+    margin: 0; /* Márgenes horizontal para separar la línea de los botones */
+  }
+  /* Elimina la sombra predeterminada /
+  .my-button:focus {
+  box-shadow: none; 
+  }*/
+
+  @media all and (max-width:800px) {
+    .combined-div {
+      display: flex;
+      flex-direction: column;
+    }      
+    .navbar-fixed{
+      flex-direction: column;
+      height: auto;
+      width: auto;
+    }
+    .content{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+
+  }

@@ -1,0 +1,142 @@
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>Conbipat</title>
+  <!--estilos de bootstrap-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
+  <!-- Los iconos tipo Solid de Fontawesome-->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css">
+  <script src="https://use.fontawesome.com/releases/v6.1.1/js/all.js"></script>
+  <!--Estilos locales-->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg bg-nav " id="myNav">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"> ROL: </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+        <div class="dropdown ms-auto ">
+          <button class="btn btn-outline-warning dropdown-toggle" type="button" data-bs-toggle="dropdown"><i
+              class="fa-solid fa-user"></i>
+            Nombre <!--Se llamará de la bd -->
+          </button>
+          <ul class="dropdown-menu text-center">
+            <li><a class="dropdown-item" href="#">
+                <img src="img/loginIcono.png" alt="70%" width="70%" />
+              </a></li>
+            <li><a class="dropdown-item" href="#">User</a></li>
+            <li><a class="dropdown-item" href="#">Aadadfsa</a></li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <form action="Validar" method="post"><!--Que nos ejecute el Servlet Validar-->
+              <button name="accion" value="Salir" class="dropdown-item">Salir</button>
+            </form>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div class="combined-div">
+    <div class="navbar-fixed ">
+      <!--Boton 1-->
+      <nav class="navbar navbar-light">
+        <button class="navbar-toggler flex-grow-1 my-button" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation " style="text-align: left; ">
+          Usuarios
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav flex-column">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Buscar</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Crear</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Reseteo</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div class="horizontal-line"></div>
+      <!--Boton 2-->
+      <nav class="navbar navbar-light ">
+        <button class="navbar-toggler flex-grow-1 my-button" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarNavBienes" aria-controls="navbarNavBienes" aria-expanded="false"
+          aria-label="Toggle navigation" style="text-align: left;">
+          Bienes
+        </button>   
+        <div class="collapse navbar-collapse" id="navbarNavBienes">
+          <ul class="navbar-nav flex-column">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Buscar</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Registrar</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+       <!--Boton 3-->
+       <nav class="navbar navbar-light ">
+        <button class="navbar-toggler flex-grow-1 my-button" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarNavTranf" aria-controls="navbarNavTranf" aria-expanded="false"
+          aria-label="Toggle navigation" style="text-align: left;">
+          Transferencia
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavTranf">
+          <ul class="navbar-nav flex-column">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Buscar</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Registrar</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+       <!--Boton 4-->
+       <nav class="navbar navbar-light ">
+        <button class="navbar-toggler flex-grow-1 my-button" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarNavSalida" aria-controls="navbarNavSalida" aria-expanded="false"
+          aria-label="Toggle navigation" style="text-align: left;">
+          Salida
+        </button>
+        <div class="collapse navbar-collapse ml-5" id="navbarNavSalida">
+          <ul class="navbar-nav flex-column">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Buscar</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Registrar</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+
+    <div class="content" id="frame" style="height: 750px;">
+      <iframe name="myframe" style="height: 100%; width: 100%; border: none">
+        
+      </iframe>
+
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
